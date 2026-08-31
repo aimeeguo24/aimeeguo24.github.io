@@ -16,7 +16,9 @@
       </button>
       <ul class="nav-links" id="navLinks">
         <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -26,51 +28,87 @@
   <main>
     <section id="top" class="hero">
       <h1>Hi, I'm Aimee Guo.</h1>
-      <p class="tagline"><!-- TODO: replace with your own one-line tagline --> A short line about what you do or what you're into.</p>
-      <a class="btn" href="#projects">View my projects</a>
+      <p class="tagline">Biomedical engineering & CS student at Cornell, building AI-driven tools for cancer diagnostics and healthcare accessibility.</p>
+      <a class="btn" href="#research">See my research</a>
     </section>
 
     <section id="about" class="section">
       <h2>About</h2>
       <p>
-        <!-- TODO: replace with 2-4 sentences about yourself -->
-        Write a couple sentences here about who you are, what you work on, and
-        what you're currently learning or interested in.
+        Curious, empathetic, imaginative — I'm a freshman at Cornell University from Dallas, Texas,
+        focused on creating a positive impact in my community through biomedical engineering,
+        computer science, and music. My work sits at the intersection of AI and medicine, from
+        fine-tuning segmentation models for cancer imaging to building tools that make healthcare
+        more accessible. Outside of research, I lead app-development teams and community
+        initiatives, and I'm a classically trained pianist.
       </p>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research</h2>
+      <p class="tech">Regeneron Science Talent Search (STS) Scholar, 2025</p>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>ClickSAM</h3>
+          <p>Fine-tuned the Segment Anything Model with self-generated click prompts for ultrasound image segmentation. Published at SPIE Medical Imaging 2024 (first author).</p>
+          <p class="tech">Segmentation, ultrasound imaging, deep learning</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Marker Track</h3>
+          <p>Automated fiducial marker tracking to assess residual motion during breath-hold radiation therapy. Submitted to Biomedical Physics & Engineering Express (first author).</p>
+          <p class="tech">Computer vision, radiation therapy</p>
+        </article>
+
+        <article class="project-card">
+          <h3>AR Tracheal Intubation</h3>
+          <p>Augmented reality system guiding physicians through tracheal intubation procedures.</p>
+          <p class="tech">DOI: 10.1117/12.3007671</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Hand Gesture Recognition for Home Automation</h3>
+          <p>Built a computer-vision pipeline for hand gesture classification to assist elderly and disabled individuals with daily tasks. UT Dallas Intelligent Robotics & Vision Lab, Dr. Xiang (Summer 2022).</p>
+          <div class="project-links">
+            <a href="https://github.com/Evelyn-Ding/hand-gesture-classification" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Ultrasound-Guided 3D Prostate Cancer Detection</h3>
+          <p>Converted 2D ultrasound segments into 3D models using ImageJ and 3D Slicer to help identify prostate cancer. UT Dallas Quantitative Bioimaging Lab, Dr. Fei (Summer 2023).</p>
+        </article>
+      </div>
     </section>
 
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="project-grid">
-        <!-- TODO: duplicate this card for each project, or delete the placeholders below -->
         <article class="project-card">
-          <h3>Project Name</h3>
-          <p>One or two sentences describing what the project does and why you built it.</p>
-          <p class="tech">Tech: e.g. Python, React, PostgreSQL</p>
-          <div class="project-links">
-            <a href="https://github.com/aimeeguo24/REPO_NAME" target="_blank" rel="noopener">GitHub</a>
-            <!-- <a href="https://your-demo-link.com" target="_blank" rel="noopener">Live Demo</a> -->
-          </div>
+          <h3>Pethub</h3>
+          <p>An app that helps pet owners reunite with lost pets by sharing and matching sighting reports. Built at Uber Global Hackathon 2022 with team Calicats (3 people, led by me).</p>
+          <p class="tech">Global Finalist — Top 5 of 732 teams, 68 countries</p>
         </article>
 
         <article class="project-card">
-          <h3>Project Name</h3>
-          <p>One or two sentences describing what the project does and why you built it.</p>
-          <p class="tech">Tech: e.g. TypeScript, Node.js</p>
+          <h3>HoloChem</h3>
+          <p>An augmented-reality chemistry lab app for remote learners, using hand-tracking, eye-tracking, and spatial mapping on HoloLens 2. Led a 4-person team for Congressional App Challenge 2022.</p>
+          <p class="tech">Tech: Unity, Mixed Reality Toolkit (MRTK), HoloLens 2</p>
           <div class="project-links">
-            <a href="https://github.com/aimeeguo24/REPO_NAME" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/aimeeguo24/HoloChem" target="_blank" rel="noopener">GitHub</a>
           </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Project Name</h3>
-          <p>One or two sentences describing what the project does and why you built it.</p>
-          <p class="tech">Tech: e.g. Swift, iOS</p>
-          <div class="project-links">
-            <a href="https://github.com/aimeeguo24/REPO_NAME" target="_blank" rel="noopener">GitHub</a>
-          </div>
+          <p class="tech">Runner-up, Dallas region</p>
         </article>
       </div>
+    </section>
+
+    <section id="leadership" class="section">
+      <h2>Leadership</h2>
+      <ul class="highlights">
+        <li><a href="https://www.mindfullofmusic.org/" target="_blank" rel="noopener">Mind-full of Music</a></li>
+        <li><a href="https://www.dallasyva.org/" target="_blank" rel="noopener">Dallas Youth Volunteer Association</a></li>
+        <li><a href="https://metrohacks.dev/" target="_blank" rel="noopener">Metrohacks</a></li>
+      </ul>
     </section>
 
     <section id="resume" class="section">
@@ -80,17 +118,17 @@
         <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
       </p>
       <ul class="highlights">
-        <!-- TODO: optional — list a few highlights instead of/alongside the PDF -->
-        <li>Highlight or role #1</li>
-        <li>Highlight or role #2</li>
-        <li>Highlight or role #3</li>
+        <li>Regeneron Science Talent Search (STS) Scholar, 2025</li>
+        <li>First-author publication, SPIE Medical Imaging 2024 (ClickSAM)</li>
+        <li>Global Finalist, Uber Global Hackathon 2022 (Pethub)</li>
+        <li>Runner-up, Congressional App Challenge 2022 — Dallas region (HoloChem)</li>
+        <li>Research experience at UT Southwestern Medical Center, Johns Hopkins University, and UT Dallas</li>
       </ul>
     </section>
 
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p>
-        <!-- TODO: replace with your real email -->
         <a href="mailto:aimeeguo24@gmail.com">aimeeguo24@gmail.com</a>
       </p>
       <ul class="social-links">
