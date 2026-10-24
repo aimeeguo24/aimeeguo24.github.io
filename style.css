@@ -1,16 +1,21 @@
 :root {
-  --bg: #fafaf9;
-  --text: #1b1f27;
-  --muted: #62697a;
-  --accent: #1f3a5c;
-  --accent-hover: #16293f;
-  --border: #e3e2df;
-  --card-bg: #f2f1ee;
+  --bg: #faf6f0;
+  --text: #2a2340;
+  --muted: #6b6280;
+  --accent: #6c4fa1;
+  --accent-2: #3a5a8c;
+  --accent-hover: #55407f;
+  --border: #e6ddea;
+  --card-bg: #f3ecf4;
   --max-width: 860px;
 
-  --hero-bg: #0d1626;
-  --hero-text: #f5f6f8;
-  --hero-muted: #97a2b8;
+  --hero-bg-start: #241b3f;
+  --hero-bg-end: #1b2c4a;
+  --hero-text: #faf6f0;
+  --hero-muted: #c9bfe0;
+
+  --band-start: #f3ecf9;
+  --band-end: #eef1fb;
 }
 
 * {
@@ -70,7 +75,7 @@ h1, h2, h3 {
 }
 
 .site-header.scrolled {
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 10px rgba(108, 79, 161, 0.12);
 }
 
 .nav-links {
@@ -107,7 +112,7 @@ h1, h2, h3 {
   display: block;
 }
 
-/* Hero */
+/* Hero (home) */
 
 .hero {
   min-height: calc(100vh - 61px);
@@ -120,7 +125,7 @@ h1, h2, h3 {
   gap: 1.25rem;
   padding: 3rem 1.5rem;
   position: relative;
-  background: var(--hero-bg);
+  background: linear-gradient(135deg, var(--hero-bg-start), var(--hero-bg-end));
   color: var(--hero-text);
 }
 
@@ -179,17 +184,61 @@ h1, h2, h3 {
   }
 }
 
+/* Page header (inner pages) */
+
+.page-hero {
+  background: linear-gradient(135deg, var(--band-start), var(--band-end));
+  border-bottom: 1px solid var(--border);
+}
+
+.page-hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 2.75rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 0.75rem;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  margin: 0;
+}
+
+.accent-bar {
+  width: 3rem;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  margin: 1.1rem 0 0;
+}
+
+.page-hero .subtitle {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin: 1rem 0 0;
+  max-width: 40rem;
+}
+
+/* Buttons */
+
 .btn {
   display: inline-block;
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
-  padding: 0.6rem 1.2rem;
+  padding: 0.65rem 1.3rem;
   border-radius: 6px;
   font-weight: 600;
 }
 
 .btn:hover {
-  background: var(--accent-hover);
+  filter: brightness(0.93);
   text-decoration: none;
 }
 
@@ -199,23 +248,16 @@ h1, h2, h3 {
   border: 1px solid var(--accent);
 }
 
+.btn-outline:hover {
+  background: var(--card-bg);
+}
+
 /* Sections */
 
 .section {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 2.5rem 1.5rem;
-  border-top: 1px solid var(--border);
-}
-
-main > .section:first-child {
-  border-top: none;
-  padding-top: 3.5rem;
-}
-
-.section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.25rem;
+  padding: 2.75rem 1.5rem;
 }
 
 /* Projects */
@@ -229,38 +271,76 @@ main > .section:first-child {
 .project-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 1.25rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 10px 28px rgba(108, 79, 161, 0.14);
+  transform: translateY(-2px);
 }
 
 .project-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .project-card .tech {
-  color: var(--muted);
-  font-size: 0.9rem;
+  color: var(--accent-2);
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .project-links {
   display: flex;
   gap: 1rem;
-  margin-top: 0.75rem;
+  margin-top: 0.9rem;
 }
 
-/* Resume / Contact */
+/* Highlights (Leadership / Resume lists) */
 
 .highlights {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.highlights li {
+  position: relative;
+  padding-left: 1.4rem;
   color: var(--muted);
 }
+
+.highlights li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+}
+
+.highlights li a {
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Contact */
 
 .social-links {
   list-style: none;
   display: flex;
   gap: 1.25rem;
   padding: 0;
+  margin: 1rem 0 0;
 }
 
 /* Footer */
@@ -270,6 +350,7 @@ main > .section:first-child {
   padding: 2rem 1.5rem;
   color: var(--muted);
   font-size: 0.9rem;
+  border-top: 1px solid var(--border);
 }
 
 /* Responsive nav */
