@@ -10,134 +10,29 @@
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="nav-brand" href="#top">Aimee Guo</a>
+      <a class="nav-brand" href="index.html">Aimee Guo</a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#leadership">Leadership</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="top" class="hero">
+    <section class="hero">
       <h1>Aimee Guo</h1>
       <p class="tagline">Biomedical engineering & CS student at Cornell, building AI-driven tools for cancer diagnostics and healthcare accessibility.</p>
-      <a class="scroll-cue" href="#about" aria-label="Scroll to explore">
-        <span class="scroll-text">Scroll</span>
+      <a class="scroll-cue" href="about.html" aria-label="Go to the About page">
+        <span class="scroll-text">Explore</span>
         <span class="arrow" aria-hidden="true"></span>
       </a>
-    </section>
-
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        Curious, empathetic, imaginative — I'm a freshman at Cornell University from Dallas, Texas,
-        focused on creating a positive impact in my community through biomedical engineering,
-        computer science, and music. My work sits at the intersection of AI and medicine, from
-        fine-tuning segmentation models for cancer imaging to building tools that make healthcare
-        more accessible. Outside of research, I lead app-development teams and community
-        initiatives, and I'm a classically trained pianist.
-      </p>
-    </section>
-
-    <section id="research" class="section">
-      <h2>Research</h2>
-      <p class="tech">Regeneron Science Talent Search (STS) Scholar, 2025</p>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>ClickSAM</h3>
-          <p>Fine-tuned the Segment Anything Model with self-generated click prompts for ultrasound image segmentation. Published at SPIE Medical Imaging 2024 (first author).</p>
-          <p class="tech">Segmentation, ultrasound imaging, deep learning</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Marker Track</h3>
-          <p>Automated fiducial marker tracking to assess residual motion during breath-hold radiation therapy. Submitted to Biomedical Physics & Engineering Express (first author).</p>
-          <p class="tech">Computer vision, radiation therapy</p>
-        </article>
-
-        <article class="project-card">
-          <h3>AR Tracheal Intubation</h3>
-          <p>Augmented reality system guiding physicians through tracheal intubation procedures.</p>
-          <p class="tech">DOI: 10.1117/12.3007671</p>
-        </article>
-
-        <article class="project-card">
-          <h3>Hand Gesture Recognition for Home Automation</h3>
-          <p>Built a computer-vision pipeline for hand gesture classification to assist elderly and disabled individuals with daily tasks. UT Dallas Intelligent Robotics & Vision Lab, Dr. Xiang (Summer 2022).</p>
-          <div class="project-links">
-            <a href="https://github.com/Evelyn-Ding/hand-gesture-classification" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Ultrasound-Guided 3D Prostate Cancer Detection</h3>
-          <p>Converted 2D ultrasound segments into 3D models using ImageJ and 3D Slicer to help identify prostate cancer. UT Dallas Quantitative Bioimaging Lab, Dr. Fei (Summer 2023).</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Pethub</h3>
-          <p>An app that helps pet owners reunite with lost pets by sharing and matching sighting reports. Built at Uber Global Hackathon 2022 with team Calicats (3 people, led by me).</p>
-          <p class="tech">Global Finalist — Top 5 of 732 teams, 68 countries</p>
-        </article>
-
-        <article class="project-card">
-          <h3>HoloChem</h3>
-          <p>An augmented-reality chemistry lab app for remote learners, using hand-tracking, eye-tracking, and spatial mapping on HoloLens 2. Led a 4-person team for Congressional App Challenge 2022.</p>
-          <p class="tech">Tech: Unity, Mixed Reality Toolkit (MRTK), HoloLens 2</p>
-          <div class="project-links">
-            <a href="https://github.com/aimeeguo24/HoloChem" target="_blank" rel="noopener">GitHub</a>
-          </div>
-          <p class="tech">Runner-up, Dallas region</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="leadership" class="section">
-      <h2>Leadership</h2>
-      <ul class="highlights">
-        <li><a href="https://www.mindfullofmusic.org/" target="_blank" rel="noopener">Mind-full of Music</a></li>
-        <li><a href="https://www.dallasyva.org/" target="_blank" rel="noopener">Dallas Youth Volunteer Association</a></li>
-        <li><a href="https://metrohacks.dev/" target="_blank" rel="noopener">Metrohacks</a></li>
-      </ul>
-    </section>
-
-    <section id="resume" class="section">
-      <h2>Resume</h2>
-      <p>
-        <!-- TODO: drop your resume PDF into assets/resume.pdf, or remove this link if not ready yet -->
-        <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-      </p>
-      <ul class="highlights">
-        <li>Regeneron Science Talent Search (STS) Scholar, 2025</li>
-        <li>First-author publication, SPIE Medical Imaging 2024 (ClickSAM)</li>
-        <li>Global Finalist, Uber Global Hackathon 2022 (Pethub)</li>
-        <li>Runner-up, Congressional App Challenge 2022 — Dallas region (HoloChem)</li>
-        <li>Research experience at UT Southwestern Medical Center, Johns Hopkins University, and UT Dallas</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:aimeeguo24@gmail.com">aimeeguo24@gmail.com</a>
-      </p>
-      <ul class="social-links">
-        <li><a href="https://github.com/aimeeguo24" target="_blank" rel="noopener">GitHub</a></li>
-        <!-- <li><a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">LinkedIn</a></li> -->
-      </ul>
     </section>
   </main>
 
